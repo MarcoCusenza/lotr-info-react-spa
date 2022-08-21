@@ -1,0 +1,19 @@
+@import "../../../css/Variables.scss";
+
+.li_container {
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: $semitransparent;
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

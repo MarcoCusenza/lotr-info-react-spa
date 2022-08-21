@@ -1,0 +1,28 @@
+@import "./Variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $gradientBG;
+  color: $lightText;
+}
+
+a {
+  color: $lightText;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+a:hover {
+  cursor: pointer;
+  color: $active;
+}
+
+ul {
+  list-style: none;
+}
