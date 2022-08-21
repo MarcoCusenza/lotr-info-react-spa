@@ -32,7 +32,13 @@ const List = ({ data, changeSelected }) => {
       <div className={styles.list_container}>
         <ul>
           {items.map((elem) => (
-            <ListItem key={elem._id} content={elem} onClick={() => changeSelected(elem)} />
+            <ListItem
+              key={elem._id}
+              content={elem}
+              onClick={() => {
+                changeSelected(elem);
+              }}
+            />
           ))}
         </ul>
       </div>

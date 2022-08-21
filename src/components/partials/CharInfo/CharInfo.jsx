@@ -8,7 +8,7 @@ import PageSelector from "../PageSelector/PageSelector";
 const CharInfo = ({ selected }) => {
   const [charQuotes, setCharQuotes] = useState({});
   const [pageSelected, setPageSelected] = useState(1);
-  const { data: dataQuotes, isLoadingQuotes, errorQuotes } = useAxios("character", selected._id, `quote?limit=50&page=${pageSelected}`);
+  const { data: dataQuotes, isLoadingQuotes, errorQuotes } = useAxios("character", selected._id, `quote?limit=10&page=${pageSelected}`);
 
   useEffect(() => {
     if (selected && dataQuotes.docs) {
